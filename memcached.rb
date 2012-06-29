@@ -4,8 +4,8 @@ class Memcached < Vulcan::Recipe
 
   url "http://memcached.googlecode.com/files/%%recipe%%-%%version%%.tar.gz"
 
-  build do |prefix|
-    run "./configure --prefix=#{prefix}"
+  build do
+    run "./configure --prefix=%%prefix%%"
     run "make install"
   end
 

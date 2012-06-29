@@ -1,0 +1,20 @@
+{
+  "name": "memcached",
+  "url":  "http://memcached.googlecode.com/files/%%recipe%%-%%version%%.tar.gz"
+  "build": [
+    "./configure --prefix=%%prefix%%",
+    "make install"
+  ],
+  "versions" {
+    "1.4.13": {
+      "md5": "6d18c6d25da945442fcc1187b3b63b7f"
+    },
+    "1.4.12": {
+      "md5": "",
+      "build": [
+        "./configure --prefix=%%prefix%%",
+        "make install"
+      ]
+    }
+  }
+}
