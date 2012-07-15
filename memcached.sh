@@ -1,4 +1,4 @@
 #!/bin/sh
-cd memached-*
+cd memcached-*
 ./configure --prefix=/app/vendor/memcached
 make install
