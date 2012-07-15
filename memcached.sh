@@ -14,7 +14,7 @@ rm -rf memcached-*
 
 # write profile.d
 mkdir -p $root/profile.d
-echo >$root/profile.d/memcached.sh <<EOF
+cat >$root/profile.d/memcached.sh <<EOF
 INCLUDE_PATH="/app/vendor/memcached/include:${INCLUDE_PATH}"
 LD_LIBRARY_PATH="/app/vendor/memcached/lib:${LD_LIBRARY_PATH}"
 PATH="/app/vendor/memcached/bin:${PATH}"
