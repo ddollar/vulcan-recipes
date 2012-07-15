@@ -1,4 +1,11 @@
 #!/bin/sh
+
+root=$(pwd)
+prefix="$root/vendor/memcached"
+
 cd memcached-*
-./configure --prefix=/app/vendor/memcached
+./configure --prefix="${prefix}"
 make install
+
+cd $root
+rm -rf memcached-*
